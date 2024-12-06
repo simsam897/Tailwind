@@ -1037,8 +1037,20 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1222,6 +1234,10 @@ video {
      object-fit: fill;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1332,6 +1348,14 @@ video {
 
 .pt-\[14rem\] {
   padding-top: 14rem;
+}
+
+.pb-\[5000px\] {
+  padding-bottom: 5000px;
+}
+
+.pt-\[20rem\] {
+  padding-top: 20rem;
 }
 
 .text-center {
