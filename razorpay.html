@@ -37,6 +37,28 @@
 
 
       }
+
+
+      .card {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hover-image {
+        position: absolute;
+        bottom: 10px;
+
+        right: 10px;
+        z-index: 100;
+        display: none;
+        opacity: 1;
+
+      }
+
+      .card:hover .hover-image {
+        display: block;
+        /* Show on hover */
+      }
     </style>
 
 
@@ -46,9 +68,13 @@
 
   <body>
     <nav class="overflow-x-hidden relative w-full bg-deepBlue flex justify-center ">
-      <div class="relative flex  items-center justify-center w-[1080px] cursor-pointer">
 
-        <a href="#" class="cursor-pointer py-7  ">
+
+
+
+      <div class="relative flex    items-center justify-center w-[1080px] cursor-pointer">
+
+        <a href="#" class="cursor-pointer  py-7 pr-7 ">
           <img src="./images/logo.svg" alt="" class="w-[125px] height-[30px] "></a>
 
 
@@ -56,8 +82,8 @@
 
 
 
+        <ul class=" space-x-6   hidden lg:flex">
 
-        <ul class=" space-x-6 ml-6 flex">
           <li
             class="cursor-pointer text-white font-mullish py-7 hover:text-lightBlue transition-all duration-200 relative group hidden lg:block">
 
@@ -182,8 +208,9 @@
 
 
 
-      <div class="flex space-x-6 justify-center items-center">
-        <img src="./images/india-flag.svg" class="ml-3 w-[28px] h-[20px] hidden lg:flex" alt="India Flag">
+      <div class="flex space-x-6 justify-center items-center  ">
+
+        <img src="./images/india-flag.svg" class="ml-3 w-[28px] h-[20px] hidden lg:block" alt="India Flag">
 
         <button
           class="bg-deepBlue py-3 px-5 font-mullish text-white border-lightBlue border rounded-md text-sm font-bold">
@@ -205,6 +232,12 @@
             <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
           </svg>
         </button> -->
+
+
+      </div>
+      <div class="flex space-x-6 justify-center items-center  ">
+
+        <i class="fa-solid fa-bars md:hidden lg:hidden  text-white  py-3 px-5 h-[70px] w-full"></i>
 
       </div>
 
@@ -710,140 +743,267 @@
 
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  w-full gap-4 my-14  ">
+
             <!-- box 1 -->
-            <div class="w-full min-h-[15rem] relative cursor-pointer ">
+
+            <div class="w-full min-h-[15rem] relative cursor-pointer boxflame group">
               <img src="./images/payment-link-icon.svg" alt=""
-                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200  ">
-              <!-- box-shape -->
-
-              <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
-                style="stroke-opacity: 0.8">
-                <path d="M 0 6 
-       A 6 6 0 0 1 6 0 
-       H 250.325 
-       A 16 16 0 0 1 261.325 5 
-       L 338.325 82 
-       A 16 16 0 0 1 343.325 93 
-       V 219 
-       A 6 6 0 0 1 337.325 225 
-       H 6 
-       A 6 6 0 0 1 0 219 
-       Z" fill="#181c2e"></path>
-              </svg>
-
-
-              <!-- box content -->
-              <div
-                class="z-[100] absolute h-full w-full flex flex-col justify-between pl-5 py-6 pr-8  border-slate-700 border ">
-                <div>
-                  <h3 class="font-mullish font-bold text-[1.35rem] leading-[1.2] text-white">Payment Links</h3>
-                  <p class="font-mullish text-greyText mt-6 text-grayBlue ">share payment link via an email , sms,
-                    messenger chat etc .
-                    and
-                    get paid immediately</p>
-                </div>
-                <!-- hyperlink -->
-                <div class="flex items-center space-x-2 cursor-pointer group">
-                  <a class="font-mullish text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
-                    href="#">Know
-                    More </a>
-                  <i class="fa-solid fa-chevron-right   
-                 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- box 2 -->
-            <div class="w-full min-h-[15rem] relative cursor-pointer ">
-              <img src="./images/payment-link-icon.svg" alt=""
-                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200  ">
-              <!-- box-shape -->
+                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
               <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
                 class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCard"
                 style="stroke-opacity: 0.15">
                 <path d="m 0 6 
-                   a 6 6 0 0 1 6 -6 
-                   h 250.32501220703125 
-                   a 16 16 0 0 1 11 5 
-                   l 77 77 
-                   a 16 16 0 0 1 5 11 
-                   v 126 
-                   a 6 6 0 0 1 -6 6 
-                   h -337.32501220703125 
-                   a 6 6 0 0 1 -6 -6 
-                   z" fill="#181c2e">
+                             a 6 6 0 0 1 6 -6 
+                             h 250.32501220703125 
+                             a 16 16 0 0 1 11 5 
+                             l 77 77 
+                             a 16 16 0 0 1 5 11 
+                             v 126 
+                             a 6 6 0 0 1 -6 6 
+                             h -337.32501220703125 
+                             a 6 6 0 0 1 -6 -6 
+                             z" fill="#181c2e">
                 </path>
               </svg>
-
-              <!-- box content -->
               <div
                 class="z-[100] absolute h-full w-full flex flex-col justify-between pl-5 py-6 pr-8 border-slate-700 border ">
                 <div>
-                  <h3 class="font-mullish font-bold text-[1.35rem] leading-[1.2] text-white ">Payment Links</h3>
-                  <p class="font-mullish text-greyText mt-6 text-grayBlue">share payment link via an email , sms,
-                    messenger
-                    chat etc .
-                    and
-                    get paid immediately</p>
+                  <h3 class="font-mullish font-bold text-[1.35rem] leading-[1.2] text-white">Payment Links</h3>
+                  <p class="font-mullish text-greyText mt-6 text-grayBlue">Share payment link via email, SMS, messenger
+                    chat, etc., and get paid immediately.</p>
                 </div>
-                <!-- hyperlink -->
                 <div class="flex items-center space-x-2 cursor-pointer group">
                   <a class="font-mullish text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
-                    href="#">Know
-                    More </a>
-                  <i class="fa-solid fa-chevron-right   
-                 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+                    href="#">Know More</a>
+                  <i
+                    class="fa-solid fa-chevron-right text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                 </div>
               </div>
-
+              <!-- Image to be displayed on hover -->
+              <img src="./images/x-flame-1.png" alt="Flame Image" width="100px" height="100px"
+                class="absolute   bottom-0 right-0  hidden group-hover:block transition-all duration-200 z-[90]">
             </div>
 
 
-            <!-- box3 -->
 
-            <div class="w-full min-h-[15rem] relative cursor-pointer ">
+
+
+            <!-- box 2 -->
+            <div class="w-full min-h-[15rem] relative cursor-pointer boxflame group">
               <img src="./images/payment-link-icon.svg" alt=""
-                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[80] transition-all duration-200  ">
-              <!-- box-shape -->
+                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
               <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCard" style="stroke-opacity: 0.8">
+                class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCard"
+                style="stroke-opacity: 0.15">
                 <path d="m 0 6 
-                   a 6 6 0 0 1 6 -6 
-                   h 250.32501220703125 
-                   a 16 16 0 0 1 11 5 
-                   l 77 77 
-                   a 16 16 0 0 1 5 11 
-                   v 126 
-                   a 6 6 0 0 1 -6 6 
-                   h -337.32501220703125 
-                   a 6 6 0 0 1 -6 -6 
-                   z" fill="#181c2e">
+                             a 6 6 0 0 1 6 -6 
+                             h 250.32501220703125 
+                             a 16 16 0 0 1 11 5 
+                             l 77 77 
+                             a 16 16 0 0 1 5 11 
+                             v 126 
+                             a 6 6 0 0 1 -6 6 
+                             h -337.32501220703125 
+                             a 6 6 0 0 1 -6 -6 
+                             z" fill="#181c2e">
                 </path>
               </svg>
-
-              <!-- box content -->
               <div
-                class="z-[1000] absolute h-full w-full flex flex-col justify-between pl-5 py-6 pr-8 border-slate-700 border  ">
+                class="z-[100] absolute h-full w-full flex flex-col justify-between pl-5 py-6 pr-8 border-slate-700 border ">
                 <div>
                   <h3 class="font-mullish font-bold text-[1.35rem] leading-[1.2] text-white">Payment Links</h3>
-                  <p class="font-mullish text-greyText mt-6 text-grayBlue">share payment link via an email , sms,
-                    messenger chat etc .
-                    and
-                    get paid immediately</p>
+                  <p class="font-mullish text-greyText mt-6 text-grayBlue">Share payment link via email, SMS, messenger
+                    chat, etc., and get paid immediately.</p>
                 </div>
-                <!-- hyperlink -->
                 <div class="flex items-center space-x-2 cursor-pointer group">
                   <a class="font-mullish text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
-                    href="#">Know
-                    More </a>
-                  <i class="fa-solid fa-chevron-right   
-                 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+                    href="#">Know More</a>
+                  <i
+                    class="fa-solid fa-chevron-right text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
                 </div>
               </div>
-
+              <!-- Image to be displayed on hover -->
+              <img src="./images/x-flame-1.png" alt="Flame Image" width="100px" height="px"
+                class="absolute   bottom-0 right-0  hidden group-hover:block transition-all duration-200 z-[90]">
             </div>
+
+
+
+
+
+
+            <!-- box 3 -->
+            <div class="w-full min-h-[15rem] relative cursor-pointer boxflame group">
+              <img src="./images/payment-link-icon.svg" alt=""
+                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+              <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCard"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                             a 6 6 0 0 1 6 -6 
+                             h 250.32501220703125 
+                             a 16 16 0 0 1 11 5 
+                             l 77 77 
+                             a 16 16 0 0 1 5 11 
+                             v 126 
+                             a 6 6 0 0 1 -6 6 
+                             h -337.32501220703125 
+                             a 6 6 0 0 1 -6 -6 
+                             z" fill="#181c2e">
+                </path>
+              </svg>
+              <div
+                class="z-[100] absolute h-full w-full flex flex-col justify-between pl-5 py-6 pr-8 border-slate-700 border ">
+                <div>
+                  <h3 class="font-mullish font-bold text-[1.35rem] leading-[1.2] text-white">Payment Links</h3>
+                  <p class="font-mullish text-greyText mt-6 text-grayBlue">Share payment link via email, SMS, messenger
+                    chat, etc., and get paid immediately.</p>
+                </div>
+                <div class="flex items-center space-x-2 cursor-pointer group">
+                  <a class="font-mullish text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                    href="#">Know More</a>
+                  <i
+                    class="fa-solid fa-chevron-right text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+                </div>
+              </div>
+              <!-- Image to be displayed on hover -->
+              <img src="./images/x-flame-1.png" alt="Flame Image" width="100px" height="px"
+                class="absolute   bottom-0 right-0  hidden group-hover:block transition-all duration-200 z-[90]">
+            </div>
+
+
+
+            <!-- box 4-->
+
+            <div class="w-full min-h-[15rem] relative cursor-pointer boxflame group">
+              <img src="./images/payment-link-icon.svg" alt=""
+                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+              <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCard"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                             a 6 6 0 0 1 6 -6 
+                             h 250.32501220703125 
+                             a 16 16 0 0 1 11 5 
+                             l 77 77 
+                             a 16 16 0 0 1 5 11 
+                             v 126 
+                             a 6 6 0 0 1 -6 6 
+                             h -337.32501220703125 
+                             a 6 6 0 0 1 -6 -6 
+                             z" fill="#181c2e">
+                </path>
+              </svg>
+              <div
+                class="z-[100] absolute h-full w-full flex flex-col justify-between pl-5 py-6 pr-8 border-slate-700 border ">
+                <div>
+                  <h3 class="font-mullish font-bold text-[1.35rem] leading-[1.2] text-white">Payment Links</h3>
+                  <p class="font-mullish text-greyText mt-6 text-grayBlue">Share payment link via email, SMS, messenger
+                    chat, etc., and get paid immediately.</p>
+                </div>
+                <div class="flex items-center space-x-2 cursor-pointer group">
+                  <a class="font-mullish text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                    href="#">Know More</a>
+                  <i
+                    class="fa-solid fa-chevron-right text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+                </div>
+              </div>
+              <!-- Image to be displayed on hover -->
+              <img src="./images/x-flame-1.png" alt="Flame Image" width="100px" height="px"
+                class="absolute   bottom-0 right-0  hidden group-hover:block transition-all duration-200 z-[90]">
+            </div>
+
+
+
+
+
+            <!-- box 5 -->
+
+
+
+            <div class="w-full min-h-[15rem] relative cursor-pointer boxflame group">
+              <img src="./images/payment-link-icon.svg" alt=""
+                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+              <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCard"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                             a 6 6 0 0 1 6 -6 
+                             h 250.32501220703125 
+                             a 16 16 0 0 1 11 5 
+                             l 77 77 
+                             a 16 16 0 0 1 5 11 
+                             v 126 
+                             a 6 6 0 0 1 -6 6 
+                             h -337.32501220703125 
+                             a 6 6 0 0 1 -6 -6 
+                             z" fill="#181c2e">
+                </path>
+              </svg>
+              <div
+                class="z-[100] absolute h-full w-full flex flex-col justify-between pl-5 py-6 pr-8 border-slate-700 border ">
+                <div>
+                  <h3 class="font-mullish font-bold text-[1.35rem] leading-[1.2] text-white">Payment Links</h3>
+                  <p class="font-mullish text-greyText mt-6 text-grayBlue">Share payment link via email, SMS, messenger
+                    chat, etc., and get paid immediately.</p>
+                </div>
+                <div class="flex items-center space-x-2 cursor-pointer group">
+                  <a class="font-mullish text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                    href="#">Know More</a>
+                  <i
+                    class="fa-solid fa-chevron-right text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+                </div>
+              </div>
+              <!-- Image to be displayed on hover -->
+              <img src="./images/x-flame-1.png" alt="Flame Image" width="100px" height="px"
+                class="absolute   bottom-0 right-0  hidden group-hover:block transition-all duration-200 z-[90]">
+            </div>
+
+
+
+            <!-- box 6 -->
+
+
+            <div class="w-full min-h-[15rem] relative cursor-pointer boxflame group">
+              <img src="./images/payment-link-icon.svg" alt=""
+                class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200">
+              <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCard"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                             a 6 6 0 0 1 6 -6 
+                             h 250.32501220703125 
+                             a 16 16 0 0 1 11 5 
+                             l 77 77 
+                             a 16 16 0 0 1 5 11 
+                             v 126 
+                             a 6 6 0 0 1 -6 6 
+                             h -337.32501220703125 
+                             a 6 6 0 0 1 -6 -6 
+                             z" fill="#181c2e">
+                </path>
+              </svg>
+              <div
+                class="z-[100] absolute h-full w-full flex flex-col justify-between pl-5 py-6 pr-8 border-slate-700 border ">
+                <div>
+                  <h3 class="font-mullish font-bold text-[1.35rem] leading-[1.2] text-white">Payment Links</h3>
+                  <p class="font-mullish text-greyText mt-6 text-grayBlue">Share payment link via email, SMS, messenger
+                    chat, etc., and get paid immediately.</p>
+                </div>
+                <div class="flex items-center space-x-2 cursor-pointer group">
+                  <a class="font-mullish text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"
+                    href="#">Know More</a>
+                  <i
+                    class="fa-solid fa-chevron-right text-lightBlue500 group-hover:text-grayBlue transition-all duration-200"></i>
+                </div>
+              </div>
+              <!-- Image to be displayed on hover -->
+              <img src="./images/x-flame-1.png" alt="Flame Image" width="100px" height="px"
+                class="absolute   bottom-0 right-0  hidden group-hover:block transition-all duration-200 z-[90]">
+            </div>
+
+
+
           </div>
 
           <!-- demo box -->
@@ -1004,7 +1164,7 @@
     <!-- core features -->
 
     <section class="relative w-full bg-[url(/images/core-features-sectionBg.svg)] bg-no-repeat mt-14 corefeatures ">
-      <div class="w-11/12 relative max-w-[1080px] mx-auto pt-4">
+      <div class="w-11/12 relative max-w-[1080px] mx-auto pt-4 ">
         <h3 class="font-mullish font-bold text-2xl text-white  text-center "> Features</h3>
         <div class="h-1 w-6 bg-greenLight mx-auto font-bold"></div>
         <p class="font-mullish text-white  mx-w-[450px] mx-auto text-center">Empoer your bussiness with all the right
@@ -1012,74 +1172,146 @@
           accept online payments and provide the best customer
           experience</p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8 ">
-          <!-- card1 -->
-          <div>
+        <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8 overflow-hidden "> -->
+
+
+        <!-- card1 -->
+
+
+        <!-- <div class="relative cursor-pointer group">
+            <!-- Card Content -->
+        <!-- <img src="./images/instant-activation-icon.svg" alt="">
+            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p> -->
+
+        <!-- Hover Image -->
+        <!-- <img src="./images/x-flame-1.png" alt="Flame Image" width="100px" height="100px"
+              class="absolute bottom-0 right-0 hidden group-hover:block transition-all duration-200 z-[100]">
+          </div> -->
+
+
+        <!-- card 2 -->
+
+        <!-- <div class="relative cursor-pointer group"> -->
+        <!-- Card Content -->
+        <!-- <img src="./images/instant-activation-icon.svg" alt="">
+            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p> -->
+
+        <!-- Hover Image -->
+        <!-- <img src="./images/x-flame-1.png" alt="Flame Image" width="100px" height="100px"
+              class="absolute bottom-0 right-0 hidden group-hover:block transition-all duration-200 z-[100]">
+          </div> -->
+
+
+
+        <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8 overflow-hidden relative ">
+
+
+
+
+
+
+          <!-- card 1 -->
+
+
+          <div class=" card cursor-pointer   ">
+            <!-- Card Content -->
             <img src="./images/instant-activation-icon.svg" alt="">
             <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p>
 
-            <p class="font-mullish text-white opacity-80">Get activared ans transact within 2 minutes . completely
-              online onboarding with minimum</p>
+            <!-- Hover Image -->
+            <img src="./images/x-flame-1.png" alt="Flame Image"
+              class="w-24 h-24 hover-image bottom-2 right-2 hidden group-hover:block">
           </div>
-
-
 
 
           <!-- card 2 -->
 
-
-          <div>
+          <div class=" card cursor-pointer   ">
+            <!-- Card Content -->
             <img src="./images/instant-activation-icon.svg" alt="">
             <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p>
 
-            <p class="font-mullish text-white opacity-80">Get activared ans transact within 2 minutes . completely
-              online
-              onboarding with minimum</p>
+            <!-- Hover Image -->
+            <img src="./images/x-flame-1.png" alt="Flame Image"
+              class="w-24 h-24 hover-image bottom-2 right-2 hidden group-hover:block">
           </div>
 
 
 
+          <!-- card 3 -->
 
-          <!-- card3 -->
 
-
-          <div>
+          <div class=" card cursor-pointer   ">
+            <!-- Card Content -->
             <img src="./images/instant-activation-icon.svg" alt="">
             <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p>
 
-            <p class="font-mullish text-white opacity-80">Get activared ans transact within 2 minutes . completely
-              online
-              onboarding with minimum</p>
+            <!-- Hover Image -->
+            <img src="./images/x-flame-1.png" alt="Flame Image"
+              class="w-24 h-24 hover-image bottom-2 right-2 hidden group-hover:block">
+          </div>
+
+          <!-- card 4 -->
+
+          <div class=" card cursor-pointer   ">
+            <!-- Card Content -->
+            <img src="./images/instant-activation-icon.svg" alt="">
+            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p>
+
+            <!-- Hover Image -->
+            <img src="./images/x-flame-1.png" alt="Flame Image"
+              class="w-24 h-24 hover-image bottom-2 right-2 hidden group-hover:block">
+          </div>
+
+          <!-- card 5 -->
+
+
+
+          <div class=" card cursor-pointer   ">
+            <!-- Card Content -->
+            <img src="./images/instant-activation-icon.svg" alt="">
+            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p>
+
+            <!-- Hover Image -->
+            <img src="./images/x-flame-1.png" alt="Flame Image"
+              class="w-24 h-24 hover-image bottom-2 right-2 hidden group-hover:block">
           </div>
 
 
 
-
-          <!-- card4 -->
-
-          <div>
-            <img src="./images/instant-activation-icon.svg" alt="">
-            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
-
-            <p class="font-mullish text-white opacity-80">Get activared ans transact within 2 minutes . completely
-              online
-              onboarding with minimum</p>
-          </div>
-
-
-
-
-          <!-- card 5  -->
-
-
-          <div>
-            <img src="./images/instant-activation-icon.svg" alt="">
-            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
-
-            <p class="font-mullish text-white opacity-80">Get activared ans transact within 2 minutes . completely
-              online
-              onboarding with minimum</p>
-          </div>
 
 
 
@@ -1087,50 +1319,82 @@
           <!-- card 6 -->
 
 
-          <div>
+
+          <div class=" card cursor-pointer   ">
+            <!-- Card Content -->
             <img src="./images/instant-activation-icon.svg" alt="">
             <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p>
 
-            <p class="font-mullish text-white opacity-80">Get activared ans transact within 2 minutes . completely
-              online
-              onboarding with minimum</p>
+            <!-- Hover Image -->
+            <img src="./images/x-flame-1.png" alt="Flame Image"
+              class="w-24 h-24 hover-image bottom-2 right-2 hidden group-hover:block">
+          </div>
+
+
+
+
+          <!-- card 7 -->
+
+
+
+
+
+          <div class=" card cursor-pointer   ">
+            <!-- Card Content -->
+            <img src="./images/instant-activation-icon.svg" alt="">
+            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p>
+
+            <!-- Hover Image -->
+            <img src="./images/x-flame-1.png" alt="Flame Image"
+              class="w-24 h-24 hover-image bottom-2 right-2 hidden group-hover:block">
+          </div>
+
+
+          <!-- card 8 -->
+
+
+
+
+
+          <div class=" card cursor-pointer   ">
+            <!-- Card Content -->
+            <img src="./images/instant-activation-icon.svg" alt="">
+            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
+            <p class="font-mullish text-white opacity-80">
+              Get activated and transact within 2 minutes. Completely online onboarding with minimum hassle.
+            </p>
+
+            <!-- Hover Image -->
+            <img src="./images/x-flame-1.png" alt="Flame Image"
+              class="w-24 h-24 hover-image bottom-2 right-2 hidden group-hover:block ">
           </div>
 
 
 
 
 
-          <!-- card 7  -->
-
-
-          <div>
-            <img src="./images/instant-activation-icon.svg" alt="">
-            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
-
-            <p class="font-mullish text-white opacity-80">Get activared ans transact within 2 minutes . completely
-              online
-              onboarding with minimum</p>
-          </div>
 
 
 
 
 
-          <!-- card 8  -->
-
-
-          <div>
-            <img src="./images/instant-activation-icon.svg" alt="">
-            <h3 class="text-white font-mullish font-bold my-4">Instant Activation</h3>
-
-            <p class="font-mullish text-white opacity-80">Get activared ans transact within 2 minutes . completely
-              online
-              onboarding with minimum</p>
-          </div>
         </div>
 
 
-      </div>
+
+
+
+
+
+
+
+
       </div>
     </section>
     <!-- join razorpay section -->
@@ -1231,7 +1495,8 @@
           <div class="max-w-[400px] flex flex-col ">
             <img src="./images/quotes.svg" alt="" class="w-[35px] h-[40px] mb-2 ">
 
-            <p class="font-mullish text-3xl font-extralighxl:order-1t">Readymade closed wallet solution for quick refunds</p>
+            <p class="font-mullish text-3xl font-extralighxl:order-1t">Readymade closed wallet solution for quick
+              refunds</p>
 
             <a href="" class="text-grayText italic underline xl:order-1">Learn More</a>
             <h3 class="font-mullish font-extrabold text-2xl -order-[1] xl:order-1">Lorem Ipism</h3>
