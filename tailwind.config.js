@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["razorpay.html"],
+  content: [
+    "./public/razorpay.html", // Adjust the path to match your HTML location
+    "./**/*.js", // Include JS files if you're using Tailwind in JS
+    "./**/*.css",
+  ],
   theme: {
     extend: {
       colors: {
