@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css "
+  
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./public/output.css"
   },
   "author": "",
   "license": "ISC",
