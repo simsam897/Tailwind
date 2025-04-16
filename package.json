@@ -1,20 +1,16 @@
 {
-  "name": "razorpay",
+  "name": "tailwind",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./input.css -o ./public/output.css --minify",
-    "postinstall": "chmod +x ./node_modules/.bin/tailwindcss"
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css "
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "tailwindcss": "^3.4.16"
-  },
-  "dependencies": {
     "autoprefixer": "^10.4.20",
-    "feather-icons": "^4.29.2",
-    "postcss": "^8.4.49"
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
   }
 }
