@@ -9,7 +9,7 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: ["./public/razorpay.html"],
   theme: {
     extend: {
       fontFamily: {
