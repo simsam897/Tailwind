@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
     <style>
@@ -23,6 +23,7 @@
 
       .cpasection {
         background-size: 100% 100%;
+        background-image: url("./images/CTABg.svg")
       }
 
 
@@ -54,10 +55,16 @@
         opacity: 1;
 
       }
+      
 
       .card:hover .hover-image {
         display: block;
         /* Show on hover */
+      }
+
+
+      .featuresSection3 {
+        background-image: url("./images/feature-section-2BG.svg");
       }
     </style>
 
@@ -191,7 +198,7 @@
 
       </div>
 
-     
+
 
 
 
@@ -212,7 +219,7 @@
           </svg>
         </button>
 
-        
+
 
 
       </div>
@@ -252,7 +259,7 @@
         <img src="./images/hero-illustration.jpg" alt="" srcset="" class="w-full  max-w-[650px]">
 
       </div>
-     
+
       <div class="w-[103%] absolute left-0 right-0">
 
         <img src="./images/hero-shape.svg" alt="" class="w-full  object-fill ">
@@ -390,7 +397,7 @@
 
 
           <div class="w-full min-h-[15rem] relative cursor-pointer ">
-            <img src="/images/payment-link-icon.svg" alt=""
+            <img src="./images/payment-link-icon.svg" alt=""
               class="bg-lightBlue absolute top-3 right-3 w-12 h-12 rounded-full z-[8] transition-all duration-200  ">
             <!-- box-shape -->
             <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
@@ -625,8 +632,7 @@
 
     <!-- features section 3 -->
 
-    <section
-      class="bg-[url(/images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-[20rem] pb-[500px] mt-14 overflow-hidden ">
+    <section class=" bg-no-repeat bg-cover pt-[20rem] pb-[500px] mt-14 overflow-hidden featuresSection3 ">
 
 
       <div class="w-10/12 max-w-[1080px] mx-auto  relative pt-4">
@@ -639,13 +645,13 @@
           Bussiness Banking
         </h2>
 
-        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-10"></div>00
+        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-10"></div>
 
 
         <div class="w-full min-h-[440px] flex flex-col relative   ">
-          <img src="/images/x-flame-1.png" alt="" class="absolute -top-[142px] -left-[140px] w-[200px]" loading="lazy">
+          <img src="./images/x-flame-1.png" alt="" class="absolute -top-[142px] -left-[140px] w-[200px]" loading="lazy">
 
-          <img src="/images/x-flame-2.png" alt="" loading="lazy" class="absolute top-[150px] -right-[180px] w-[200px]">
+          <img src="./images/x-flame-2.png" alt="" loading="lazy" class="absolute top-[150px] -right-[180px] w-[200px]">
 
           <!-- content box -->
 
@@ -987,11 +993,13 @@
 
           <div
             class="w-full  relative cursor-pointer hidden   justify-evenly md:flex md:flex-col items-center lg:flex  lg:flex-row  border border-slate-700 mb=24 gap-y-6 p-8 rounded-md">
-            <p class="font-mullish font-bold leading-[1.2] text-white  text-xl">check out the live demo to learn how
+
+
+            <p class="font-mullish font-bold leading-[1.2] text-white   text-xl">check out the live demo to learn how
               razorpayX works<span class="font-bold">No sign-up required</span></p>
 
             <button
-              class="relative md:w-fit bg-lightBlue flex justify-start items-center  md:pr-[90px] font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 px-[18px] py-[14px] rounded-md mt-3 ">check
+              class="relative md:w-fit flex bg-lightBlue justify-start items-center  md:pr-[90px] font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 px-[18px] py-[14px] rounded-md mt-3 ">check
               out the demo
               <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex items-center justify-center">
                 <svg viewBox="0 0 24 24" focusable="false" class="w-[20px] h-[20px] -skew-x-[20deg]">
@@ -1044,7 +1052,7 @@
           <!-- card 1 -->
 
           <div
-            class="bg-[url(/images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bg-hover.svg)] p-10 bg-white">
+            class="bg-[url(./images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./images/instant-settlement-bg-hover.svg)] p-10 bg-white">
             <img src="./images/razorpayXicon.svg" alt="" class="w-10 h-10 ">
             <h3 class="font-mullish font-bold text-lg pt-4 ">cooperative Card</h3>
             <p class="font-mullish text-greyText my-3 leading-normal ">
@@ -1061,7 +1069,7 @@
           </div>
           <!-- card 2 -->
           <div
-            class="bg-[url(/images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bg-hover.svg)] p-10  bg-white">
+            class="bg-[url(./images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./images/instant-settlement-bg-hover.svg)] p-10  bg-white">
             <img src="./images/razorpayXicon.svg" alt="" class="w-10 h-10 ">
             <h3 class="font-mullish font-bold text-lg pt-4 ">cooperative Card</h3>
             <p class="font-mullish text-greyText my-3 leading-normal ">
@@ -1079,7 +1087,7 @@
           <!-- card 3 -->
 
           <div
-            class="bg-[url(/images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bg-hover.svg)] p-10  bg-white">
+            class="bg-[url(./images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bg-hover.svg)] p-10  bg-white">
             <img src="./images/razorpayXicon.svg" alt="" class="w-10 h-10 ">
             <h3 class="font-mullish font-bold text-lg pt-4 ">cooperative Card</h3>
             <p class="font-mullish text-greyText my-3 leading-normal ">
@@ -1097,7 +1105,7 @@
           <!-- card 4-->
 
           <div
-            class="bg-[url(/images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bg-hover.svg)] p-10  bg-white">
+            class="bg-[url(./images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./images/instant-settlement-bg-hover.svg)] p-10  bg-white">
             <img src="./images/razorpayXicon.svg" alt="" class="w-10 h-10 ">
             <h3 class="font-mullish font-bold text-lg pt-4 ">cooperative Card</h3>
             <p class="font-mullish text-greyText my-3 leading-normal ">
@@ -1116,7 +1124,7 @@
 
 
           <div
-            class="bg-[url(/images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(/images/instant-settlement-bg-hover.svg)] p-10  bg-white">
+            class="bg-[url(./images/instant-settlement-bg.svg)]  w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./images/instant-settlement-bg-hover.svg)] p-10  bg-white">
             <img src="./images/razorpayXicon.svg" alt="" class="w-10 h-10 ">
             <h3 class="font-mullish font-bold text-lg pt-4 ">cooperative Card</h3>
             <p class="font-mullish text-greyText my-3 leading-normal ">
@@ -1141,7 +1149,7 @@
     <!-- core features -->
 
     <section
-      class="relative w-full text-white bg-[url(/images/core-features-sectionBg.svg)] bg-no-repeat mt-14 corefeatures ">
+      class="relative w-full text-white bg-[url(/images/core-features-sectionBg.svg)] bg-no-repeat mt-14 corefeatures bg-lightBlue">
       <div class="w-11/12 relative max-w-[1080px] mx-auto pt-4 ">
         <h3 class="font-mullish font-bold text-2xl text-white  text-center "> Features</h3>
         <div class="h-1 w-6 bg-greenLight mx-auto font-bold"></div>
@@ -1150,7 +1158,7 @@
           accept online payments and provide the best customer
           experience</p>
 
-        
+
 
 
 
@@ -1430,13 +1438,13 @@
         <!-- main content -->
         <div class="flex flex-col xl:flex-row  max-w-[960px] items-center mx-auto my-16 space-x-[10rem]">
           <!-- left image -->
-          <img src="/images/testimonial.jpg" alt="" loading="lazy" class=" w-[320px] h-[320px] rounded-xl ">
+          <img src="./images/testimonial.jpg" alt="" loading="lazy" class=" w-[320px] h-[320px] rounded-xl ">
 
 
           <!-- right img -->
 
           <div class="max-w-[400px] flex flex-col ">
-            <img src="/images/quotes.svg" alt="" class="w-[35px] h-[40px] mb-2 ">
+            <img src="./images/quotes.svg" alt="" class="w-[35px] h-[40px] mb-2 ">
 
             <p class="font-mullish text-3xl font-extralighxl:order-1t">Readymade closed wallet solution for quick
               refunds</p>
@@ -1444,7 +1452,7 @@
             <a href="" class="text-grayText italic underline xl:order-1">Learn More</a>
             <h3 class="font-mullish font-extrabold text-2xl -order-[1] xl:order-1">Lorem Ipism</h3>
             <p class="font-mullish font-medium xl:order-1">CEO , XYZ Engineering Company</p>
-            <img src="/images/fake-company-logo.png" alt="" class="w-[80px] h-[40px] xl:order-1">
+            <img src="./images/fake-company-logo.png" alt="" class="w-[80px] h-[40px] xl:order-1">
           </div>
 
         </div>
@@ -1501,8 +1509,8 @@
 
     <!-- CTA -->
 
-    <section
-      class="relative  bg-[url(/images/CTABg.svg)] bg-no-repeat bg-cover w-full h-full bg-[#f4f8ff] max-h-[510px]  cpasection">
+    <section class="relative   bg-no-repeat bg-cover w-full h-full  max-h-[510px] cpasection ">
+      <!-- <img src="./images/CTABg.svg" alt=""> -->
 
       <!-- main content -->
 
@@ -1512,7 +1520,8 @@
 
         <div class="flex flex-col space-y-1 max-w-[600px]  ">
 
-          <h2 class="font-mullish font-bold text-xl text-white">Supercharge with Razorpay</h2>
+          <h2 class="font-mullish font-bold text-xl text-white   ">Supercharge your bussiness with
+            Razorpay</h2>
           <div class="h-1 w-6 bg-greenLight"></div>
           <p class="font-mullish  text-white">Sign up now to experience the future of payments and offer
             <br> your
@@ -1579,13 +1588,13 @@
 
 
 
-          <!-- right side image -->
+
 
 
 
         </div>
-
-        <img src="./images/ctaImg.svg" alt="" width="200px" height="242px" class=" mb-16 pb-3 hidden lg:block ">
+        <!-- right side image -->
+        <img src="images\ctaImg.svg" alt="" width="200px" height="242px" class=" mb-16 pb-3 hidden lg:block ">
 
 
       </div>
@@ -1607,7 +1616,7 @@
         class="w-10/12 pt-[400px] pb-10 md:pt-[350px] md:my-0 md:w-11/12 max-w-[1080px] mx-auto flex flex-col space-y-6 lg:space-y-0 lg:space-x-4 lg:flex-row justify-between">
         <!-- column - 1 -->
         <div class=" flex flex-col space-y-6 md:max-w-[340px] ">
-          <img src="/images/logo-dark.svg" loading="lazy" width="120px" height="24px" />
+          <img src="./images/logo-dark.svg" loading="lazy" width="120px" height="24px" />
           <p class="text-sm text-grayText my-3 font-mullish">
             Razorpay is the only payments solution in India that allows
             businesses to accept, process and disburse payments with its product
@@ -1651,8 +1660,9 @@
             </button>
           </form>
           <div class="flex items-start space-x-4">
-            <img src="/images/footer-certificate-1.png" loading="lazy" width="92" height="40" class="cursor-pointer" />
-            <img src="/images/footer-certificate-2.jpg" loading="lazy" width="122" height="80" class="cursor-pointer" />
+            <img src="./images/footer-certificate-1.png" loading="lazy" width="92" height="40" class="cursor-pointer" />
+            <img src="./images/footer-certificate-2.jpg" loading="lazy" width="122" height="80"
+              class="cursor-pointer" />
           </div>
         </div>
         <!-- column - 2 -->
@@ -2041,27 +2051,27 @@
               <ul class="flex space-x-4 items-center mt-4">
                 <li class="cursor-pointer">
                   <a>
-                    <img src="/images/facebook-icon.svg" width="24" height="24" loading="lazy" />
+                    <img src="./images/facebook-icon.svg" width="24" height="24" loading="lazy" />
                   </a>
                 </li>
                 <li class="cursor-pointer">
                   <a>
-                    <img src="/images/twitter-icon.svg" width="24" height="24" loading="lazy" />
+                    <img src="./images/twitter-icon.svg" width="24" height="24" loading="lazy" />
                   </a>
                 </li>
                 <li class="cursor-pointer">
                   <a>
-                    <img src="/images/instagram-icon.svg" width="24" height="24" loading="lazy" />
+                    <img src="./images/instagram-icon.svg" width="24" height="24" loading="lazy" />
                   </a>
                 </li>
                 <li class="cursor-pointer">
                   <a>
-                    <img src="/images/github-icon.svg" width="24" height="24" loading="lazy" />
+                    <img src="./images/github-icon.svg" width="24" height="24" loading="lazy" />
                   </a>
                 </li>
                 <li class="cursor-pointer">
                   <a>
-                    <img src="/images/linkedin-icon.svg" width="24" height="24" loading="lazy" />
+                    <img src="./images/linkedin-icon.svg" width="24" height="24" loading="lazy" />
                   </a>
                 </li>
               </ul>

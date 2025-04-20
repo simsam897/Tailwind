@@ -11,6 +11,7 @@
     --color-slate-700: oklch(37.2% 0.044 257.287);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
@@ -214,9 +215,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -409,9 +407,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
@@ -495,9 +490,6 @@
   }
   .w-10\/12 {
     width: calc(10/12 * 100%);
-  }
-  .w-11 {
-    width: calc(var(--spacing) * 11);
   }
   .w-11\/12 {
     width: calc(11/12 * 100%);
@@ -586,18 +578,8 @@
   .min-w-\[32px\] {
     min-width: 32px;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
@@ -619,9 +601,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -837,29 +816,17 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\"\"\.\/images\/CTABg\.svg\)\] {
-    background-image: url(""./images/CTABg.svg);
-  }
-  .bg-\[url\(\"\.\/images\/CTABg\.svg\"\)\] {
-    background-image: url("./images/CTABg.svg");
-  }
-  .bg-\[url\(\'\.\/images\/CTABg\.svg\'\)\] {
-    background-image: url('./images/CTABg.svg');
-  }
-  .bg-\[url\(\.\/images\/CTABg\.svg\)\] {
-    background-image: url(./images/CTABg.svg);
-  }
-  .bg-\[url\(\.\/images\/feature-section-2BG\.svg\)\] {
-    background-image: url(./images/feature-section-2BG.svg);
-  }
-  .bg-\[url\(\.\/images\/instant-settlement-bg\.svg\)\] {
-    background-image: url(./images/instant-settlement-bg.svg);
-  }
   .bg-\[url\(\/images\/CTABg\.svg\)\] {
     background-image: url(/images/CTABg.svg);
   }
   .bg-\[url\(\/images\/core-features-sectionBg\.svg\)\] {
     background-image: url(/images/core-features-sectionBg.svg);
+  }
+  .bg-\[url\(\/images\/feature-section-2BG\.svg\)\] {
+    background-image: url(/images/feature-section-2BG.svg);
+  }
+  .bg-\[url\(\/images\/instant-settlement-bg\.svg\)\] {
+    background-image: url(/images/instant-settlement-bg.svg);
   }
   .bg-cover {
     background-size: cover;
@@ -1094,10 +1061,6 @@
   .mix-blend-multiply {
     mix-blend-mode: multiply;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .outline-lightBlue {
     outline-color: var(--color-lightBlue);
   }
@@ -1154,13 +1117,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-lightBlue500);
-      }
-    }
-  }
-  .hover\:bg-\[url\(\.\/images\/instant-settlement-bg-hover\.svg\)\] {
-    &:hover {
-      @media (hover: hover) {
-        background-image: url(./images/instant-settlement-bg-hover.svg);
       }
     }
   }
@@ -1438,11 +1394,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1531,7 +1482,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
